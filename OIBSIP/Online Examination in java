@@ -179,4 +179,33 @@ public class Onlineexam implements ActionListener
 			f3.setVisible(true);
 		}
 		else if(ae.getSource()==b7)
+		{}
+	boolean check()
+	{
+		if(question==0)
 		{
+			return (r[0].isSelected());
+		}
+		if(question==1)
+		{
+			return (r[2].isSelected());
+		}
+		if(question==2)
+		{
+			return (r[2].isSelected());
+		}
+		if(question==3)
+		{
+			return (r[0].isSelected());
+		}
+		if(question==4)
+		{
+			return (r[1].isSelected());
+		}
+		return false;
+	}
+	public static void main(String args[])
+	{
+		new Onlineexam();
+	}
+}
