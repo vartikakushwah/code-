@@ -75,4 +75,63 @@ public class Onlineexam implements ActionListener
 		r[0].setBounds(50,80,250,30);
 		r[1].setBounds(50,120,250,30);
 		r[2].setBounds(50,160,250,30);
-		r[3].setBounds(
+		r[3].setBounds(50,150,130,30);
+		b8.setBounds(100,250,100,30);
+		b9.setBounds(250,250,100,30);
+		b10.setBounds(250,200,130,30);
+		for(int i=0;i<5;i++)
+		{
+			r[i]=new JRadioButton();
+			f3.add(r[i]);
+			bg.add(r[i]);
+		}
+		r[0].setBounds(50,80,250,30);
+		r[1].setBounds(50,120,250,30);
+		r[2].setBounds(50,160,250,30);
+		r[3].setBounds(50,200,250,30);
+		set();
+		f1.add(l1);
+		f1.add(l2);
+		f1.add(l3);
+		f1.add(tf1);
+		f1.add(tf2);
+		f1.add(b1);
+		f1.add(b2);
+		f2.add(l4);
+		f2.add(l5);
+		f2.add(l6);
+		f2.add(l7);
+		f2.add(l8);
+		f2.add(l9);
+		f2.add(l10);
+		f2.add(l11);
+		f2.add(l12);
+		f2.add(l13);
+		f2.add(l14);
+		f2.add(l15);
+		f2.add(l17);
+		f2.add(b4);
+		f2.add(b5);
+		f2.add(b6);
+		f2.add(b7);
+		f2.add(b10);
+		f3.add(l16);
+		f3.add(b8);
+		f3.add(b9);
+		b1.addActionListener(this);
+		b2.addActionListener(this);
+		b4.addActionListener(this);
+		b5.addActionListener(this);
+		b6.addActionListener(this);
+		b7.addActionListener(this);
+		b8.addActionListener(this);
+		b9.addActionListener(this);
+		b10.addActionListener(this);
+		b9.setVisible(false);
+		f1.setLayout(null);
+		f1.setSize(600,650);
+		f1.setVisible(true);
+		f1.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+	}
+	public void actionPerformed(ActionEvent ae)
+	{
