@@ -135,3 +135,48 @@ public class Onlineexam implements ActionListener
 	}
 	public void actionPerformed(ActionEvent ae)
 	{
+		if(ae.getSource()==b1)
+		{
+			String s1=tf2.getText();
+			String s2="demo123";
+			String s3=tf1.getText();
+			l7.setText(s3);
+			l8.setText(s1);
+			if(s1.equals(s2)&&s3.length()>3)
+			{
+				f2.setSize(600,650);
+				f2.setLayout(null);
+				f2.setVisible(true);
+				f1.setVisible(false);
+			}
+			else
+			{
+				JOptionPane.showMessageDialog(null,"Incorrect details","Invalid Details",JOptionPane.ERROR_MESSAGE);
+			}
+		}
+		else if(ae.getSource()==b2)
+		{
+			f1.setVisible(false);
+		}
+		else if(ae.getSource()==b4)
+		{
+			String st2=JOptionPane.showInputDialog("Enter FullName");
+			l13.setText(st2);
+			String st3=JOptionPane.showInputDialog("Enter Branch");
+			l14.setText(st3);			
+			String st4=JOptionPane.showInputDialog("Enter Gender");
+			l15.setText(st4);
+		}
+		else if(ae.getSource()==b5)
+		{
+			String st1=JOptionPane.showInputDialog("Enter new Password");
+			l8.setText(st1);
+		}
+		else if(ae.getSource()==b6)
+		{
+			f3.setSize(600,650);
+			f3.setLayout(null);
+			f3.setVisible(true);
+		}
+		else if(ae.getSource()==b7)
+		{
