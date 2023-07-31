@@ -1,1 +1,38 @@
-
+import java.awt.event.*;
+import javax.swing.*;
+public class Onlineexam implements ActionListener
+{ 
+	int marks=0,question=0;
+	JFrame f1=new JFrame("LOGIN");
+	JFrame f2=new JFrame("Profile");
+	JFrame f3=new JFrame("ONLINE TEST");
+	JLabel l1=new JLabel("STUDENT'S  LOGIN");
+	JLabel l2=new JLabel("Rollno :");
+	JLabel l3=new JLabel("Password :");
+	JLabel l4=new JLabel("PROFILE");
+	JLabel l5=new JLabel("Roll No :");
+	JLabel l6=new JLabel("Password :");
+	JLabel l7=new JLabel();
+	JLabel l8=new JLabel();
+	JLabel l9=new JLabel("ONLINE EXAMINATION");
+	JLabel l10=new JLabel("Full Name :");
+	JLabel l11=new JLabel("Branch :");
+	JLabel l12=new JLabel("Gender :");
+	JLabel l13=new JLabel("----");
+	JLabel l14=new JLabel("----");
+	JLabel l15=new JLabel("----");
+	JLabel l16=new JLabel();
+	JLabel l17=new JLabel();
+	JButton b1=new JButton("Login");
+	JButton b2=new JButton("Exit");
+	JButton b4=new JButton("Update Profile");
+	JButton b5=new JButton("Change Password");
+	JButton b6=new JButton("Take Test");
+	JButton b7=new JButton("Check Marks");
+	JButton b8=new JButton("Next");
+	JButton b9=new JButton("Submit");
+	JButton b10=new JButton("Log out");
+	ButtonGroup bg=new ButtonGroup();
+	JRadioButton r[]=new JRadioButton[5];
+	JTextField tf1=new JTextField();
+	JTextField tf2=new JTextField();
